@@ -23,7 +23,8 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button0" />
+            android:id="@+id/button0"
+            android:onClick="playPhrase" />
 
         <Button
             android:text="Button"
@@ -34,7 +35,8 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button1" />
+            android:id="@+id/button1"
+            android:onClick="playPhrase" />
 
         <Button
             android:text="Button"
