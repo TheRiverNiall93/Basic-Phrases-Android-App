@@ -12,7 +12,8 @@
 
     <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:id="@+id/gridLayout">
 
         <Button
             android:text="Hello"
@@ -24,7 +25,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button0"
-            android:onClick="playPhrase" />
+            android:onClick="playPhrase"
+            android:tag="hello"/>
 
         <Button
             android:text="Good evening"
@@ -36,7 +38,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button1"
-            android:onClick="playPhrase" />
+            android:onClick="playPhrase"
+            android:tag="goodevening"/>
 
         <Button
             android:text="Please"
@@ -48,7 +51,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button2"
-            android:onClick="playPhrase"/>
+            android:onClick="playPhrase"
+            android:tag="please"/>
 
         <Button
             android:text="Welcome"
@@ -60,7 +64,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button3"
-            android:onClick="playPhrase"/>
+            android:onClick="playPhrase"
+            android:tag="welcome"/>
 
         <Button
             android:text="My name is..."
@@ -72,7 +77,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button4"
-            android:onClick="playPhrase"/>
+            android:onClick="playPhrase"
+            android:tag="mynameis"/>
 
         <Button
             android:text="I live in..."
@@ -84,7 +90,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button5"
-            android:onClick="playPhrase"/>
+            android:onClick="playPhrase"
+            android:tag="ilivein"/>
 
         <Button
             android:text="Do you speak English?"
@@ -96,7 +103,8 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button6"
-            android:onClick="playPhrase"/>
+            android:onClick="playPhrase"
+            android:tag="doyouspeakenglish"/>
 
         <Button
             android:text="How are you?"
@@ -108,6 +116,7 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:id="@+id/button7"
-            android:onClick="playPhrase"/>
+            android:onClick="playPhrase"
+            android:tag="howareyou"/>
     </GridLayout>
 </RelativeLayout>

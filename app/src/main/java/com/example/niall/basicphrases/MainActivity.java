@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.GridLayout;
 
 import java.util.HashMap;
 
@@ -20,14 +21,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupButtonMapping() {
-        buttonIdToSoundClipId.put(R.id.button0, R.raw.hello);
-        buttonIdToSoundClipId.put(R.id.button1, R.raw.goodevening);
-        buttonIdToSoundClipId.put(R.id.button2, R.raw.please);
-        buttonIdToSoundClipId.put(R.id.button3, R.raw.welcome);
-        buttonIdToSoundClipId.put(R.id.button4, R.raw.mynameis);
-        buttonIdToSoundClipId.put(R.id.button5, R.raw.ilivein);
-        buttonIdToSoundClipId.put(R.id.button6, R.raw.doyouspeakenglish);
-        buttonIdToSoundClipId.put(R.id.button7, R.raw.howareyou);
+        // For this method to work, the button within the activity_main.xml must have a tag
+        // attribute set to the file name of the sound clip it will play when pressed.
+        GridLayout grid = (GridLayout) findViewById(R.id.gridLayout);
+        int buttonId;
+        int fileId;
+        String fileName;
+        for (int i = 0; i < grid.getChildCount(); i++) {
+            buttonId = grid.getChildAt(i).getId();
+            fileName = grid.getChildAt(i).getTag().toString();
+            fileId = getResources().getIdentifier(fileName, "raw", getPackageName());
+
+            buttonIdToSoundClipId.put(buttonId, fileId);
+        }
     }
 
     public void playPhrase(View view) {
