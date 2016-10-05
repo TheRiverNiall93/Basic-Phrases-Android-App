@@ -15,7 +15,7 @@
         android:layout_height="match_parent">
 
         <Button
-            android:text="Button"
+            android:text="Hello"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -27,7 +27,7 @@
             android:onClick="playPhrase" />
 
         <Button
-            android:text="Button"
+            android:text="Good evening"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -39,7 +39,7 @@
             android:onClick="playPhrase" />
 
         <Button
-            android:text="Button"
+            android:text="Please"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -47,10 +47,11 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button2" />
+            android:id="@+id/button2"
+            android:onClick="playPhrase"/>
 
         <Button
-            android:text="Button"
+            android:text="Welcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -58,10 +59,11 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button3" />
+            android:id="@+id/button3"
+            android:onClick="playPhrase"/>
 
         <Button
-            android:text="Button"
+            android:text="My name is..."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -69,10 +71,11 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button4" />
+            android:id="@+id/button4"
+            android:onClick="playPhrase"/>
 
         <Button
-            android:text="Button"
+            android:text="I live in..."
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -80,10 +83,11 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button5" />
+            android:id="@+id/button5"
+            android:onClick="playPhrase"/>
 
         <Button
-            android:text="Button"
+            android:text="Do you speak English?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="0"
@@ -91,10 +95,11 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button6" />
+            android:id="@+id/button6"
+            android:onClick="playPhrase"/>
 
         <Button
-            android:text="Button"
+            android:text="How are you?"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_column="1"
@@ -102,6 +107,7 @@
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
-            android:id="@+id/button7" />
+            android:id="@+id/button7"
+            android:onClick="playPhrase"/>
     </GridLayout>
 </RelativeLayout>

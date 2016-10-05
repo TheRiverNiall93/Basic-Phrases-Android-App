@@ -21,7 +21,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupButtonMapping() {
         buttonIdToSoundClipId.put(R.id.button0, R.raw.hello);
-        buttonIdToSoundClipId.put(R.id.button1, R.raw.howareyou);
+        buttonIdToSoundClipId.put(R.id.button1, R.raw.goodevening);
+        buttonIdToSoundClipId.put(R.id.button2, R.raw.please);
+        buttonIdToSoundClipId.put(R.id.button3, R.raw.welcome);
+        buttonIdToSoundClipId.put(R.id.button4, R.raw.mynameis);
+        buttonIdToSoundClipId.put(R.id.button5, R.raw.ilivein);
+        buttonIdToSoundClipId.put(R.id.button6, R.raw.doyouspeakenglish);
+        buttonIdToSoundClipId.put(R.id.button7, R.raw.howareyou);
     }
 
     public void playPhrase(View view) {
